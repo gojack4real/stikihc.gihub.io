@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stiki Hard Crew - Pemesanan Baju</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Stiki Hard Crew</h1>
+        </header>
+        <main>
+            <div class="shirt-designs">
+                <img src="shirt.jpg" alt="Desain Baju Depan">
+                <img src="shirt.jpg" alt="Desain Baju Belakang">
+            </div>
+            <form id="orderForm" action="process_order.php" method="POST">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Nomor HP:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="size">Ukuran:</label>
+                <select id="size" name="size" required>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                </select>
+
+                <button type="submit">Pesan Sekarang</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
